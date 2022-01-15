@@ -2,22 +2,27 @@
   font-family: "NaughtyMonster";
   src: url(/assets/font/NaughtyMonster.otf);
 }
+
 @font-face {
   font-family: "Proxima Nova Black";
   src: url(/assets/font/Proxima\ Nova\ Black.otf);
 }
+
 @font-face {
   font-family: "Proxima Nova Bold";
   src: url(/assets/font/Proxima\ Nova\ Bold.otf);
 }
+
 @font-face {
   font-family: "Proxima Nova Extrabold";
   src: url(/assets/font/Proxima\ Nova\ Extrabold.otf);
 }
+
 @font-face {
   font-family: "Proxima Nova Thin";
   src: url(/assets/font/Proxima\ Nova\ Thin.otf);
 }
+
 @font-face {
   font-family: "ProximaNova-Regular";
   src: url(/assets/font/ProximaNova-Regular.otf);
@@ -29,6 +34,31 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(/assets/img/svg/Artboard1.svg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
 h1 {
-  font-family: "NaughtyMonster", sans-serif;
+  font-family: "NaughtyMonster";
+}
+
+h2 {
+  font-family: "ProximaNova-Regular";
+}
+
+p {
+  font-family: "Proxima Nova Thin";
+}
+
+.contact p span,
+label {
+  font-family: Proxima Nova Extrabold;
+}
+
+a {
+  text-decoration: none;
+  font-family: "ProximaNova-Regular";
+  color: rgb(66, 66, 66);
 }
