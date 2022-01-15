@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "NaughtyMonster";
+  src: url(/assets/font/NaughtyMonster.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url(/assets/font/Proxima\ Nova\ Black.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url(/assets/font/Proxima\ Nova\ Bold.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  src: url(/assets/font/Proxima\ Nova\ Extrabold.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: url(/assets/font/Proxima\ Nova\ Thin.otf);
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url(/assets/font/ProximaNova-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "NaughtyMonster", sans-serif;
+}
