@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 99">
+  <title>scroll</title>
+  <g>
+    <g id="Rectangle_4" data-name="Rectangle 4">
+      <path d="M26.5,7.76h0A18.5,18.5,0,0,1,45,26.26v24a18.5,18.5,0,0,1-18.5,18.5h0A18.5,18.5,0,0,1,8,50.26v-24A18.5,18.5,0,0,1,26.5,7.76Z" style="fill: none"/>
+      <path d="M26.5,9.26h0a17,17,0,0,1,17,17v24a17,17,0,0,1-17,17h0a17,17,0,0,1-17-17v-24A17,17,0,0,1,26.5,9.26Z" style="fill: none;stroke: #f8a22f;stroke-width: 3px"/>
+    </g>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="26.5" cy="25.26" r="3.5" style="fill: #f8a22f"/>
+    <path id="Path_9" data-name="Path 9" d="M11.57,79.83,26.68,91.24l14-11.41" style="fill: none;stroke: #f8a22f;stroke-linecap: round;stroke-width: 3px"/>
+  </g>
+</svg>
