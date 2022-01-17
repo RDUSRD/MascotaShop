@@ -42,6 +42,7 @@ body {
 }
 
 h1 {
+  width: 500px;
   font-family: "NaughtyMonster";
   color: #272929;
   font-size: 3rem;
@@ -50,6 +51,22 @@ h1 {
 
 .textos-header h1 span {
   font-size: 5rem;
+}
+
+.container-underline {
+  position: relative;
+}
+
+.textos-header h1 span .underline {
+  position: absolute;
+  top: 2.5rem;
+  right: 0px;
+  background-color: rgb(255, 196, 0.9);
+  height: 20px;
+  width: 300px;
+  z-index: -1;
+  border-radius: 20px;
+  content: "";
 }
 
 h2 {
@@ -75,7 +92,6 @@ a {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  overflow: hidden;
 }
 
 .contenedor1 {
@@ -100,7 +116,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: rgb(200, 255, 0);
+  /* background-color: rgb(200, 255, 0); */
 }
 
 .nav {
@@ -183,6 +199,10 @@ nav {
   margin: 0px 170px 30px 0px;
 }
 
+.mascotaShop {
+  font-family: 'Proxima Nova Bold';
+}
+
 .contenido-header .textos-header h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -197,8 +217,8 @@ nav {
   margin-left: 30%;
   margin-bottom: 50px;
   border-radius: 50px;
-  border: 2px solid #ee9e0b;
-  color: #ee9e0b;
+  border: 2px solid #F5B041;
+  color: #F5B041;
   background-color: dimgray;
   cursor: pointer;
 }
@@ -268,6 +288,7 @@ nav {
 .about-us {
   background-image: url('/assets/img/svg/huella.svg');
   background-repeat: no-repeat;
+  padding: 80px 0;
 }
 
 .contenedor-articulo {
@@ -285,21 +306,69 @@ nav {
 }
 
 .articulo {
-  width: 29%;
+  width: 300px;
+  height: 250px;
   margin-bottom: 30px;
-  background-color: #FCF3CF;
+  /* background-color: #FCF3CF; */
+  cursor: pointer;
+}
+
+.imagen-articulo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imgHover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: ease-in-out .3s;
+}
+
+.imgHover:hover {
+  opacity: 1;
 }
 
 .articulo p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Proxima Nova Extrabold";
   font-size: 30px;
   color: #ee9e0b;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  text-align: center;
-  padding-top: 7px;
   background-color: #566573;
+}
+
+.articulo .imagen-articulo h6 {
+  position: absolute;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  top: 50px;
+  right: 52px;
+  width: 200px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Proxima Nova Bold';
 }
 
 /* SECTION INSTALL */
@@ -439,10 +508,14 @@ nav {
 }
 
 /* BREAK POINTS */
-@media screen and (max-width:425px) {
-  /* .nav .enlaces-header {
-    display: none;
-  } */
+@media screen and (max-width:375px) {
+  .contenedor {
+    overflow: hidden;
+  }
+
+  .contenedor1 {
+    padding: 30px 0;
+  }
 
   .enlaces-header {
     position: fixed;
@@ -476,19 +549,35 @@ nav {
     display: block;
   }
 
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-
   .contenido-header {
     flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
     padding: 10px 0 60px 0;
   }
 
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 330px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+  }
+
+  .textos-header h1 span {
+    font-size: 3rem;
+  }
+
+  .textos-header h1 span .underline {
+    top: 3.9rem;
+    right: 99px;
+    height: 15px;
+    width: 160px;
+  }
+
   .contenido-header .textos-header .btn-install {
+    width: 287px;
+    margin-right: 58px;
     margin-left: 0;
   }
 
@@ -496,26 +585,48 @@ nav {
     text-align: center;
   }
 
+  .textos-header h2 {
+    width: 340px;
+    font-size: 20px;
+  }
+
   .contenido-header .textos-header p {
-    margin: 0px;
+    width: 80%;
     text-align: center;
+  }
+
+  .contenido-header .textos-header input {
+    width: 335px;
+    margin-right: 73px;
   }
 
   .contenido-header .textos-header .subscribe {
     display: inline-block;
-    margin: 10px 0;
-    width: 350px;
+    width: 335px;
+    margin: 10px 73px 0 0;
   }
 
   .contenido-header .img-header>img {
-    width: 280px;
-    margin: auto;
+    width: 300px;
+    margin-right: 75px;
+  }
+
+  .contenido-header .store {
+    width: 80%;
   }
 
   .contenido-header .store>img {
     width: 140px;
   }
 
+  .about-us {
+    padding: 0;
+  }
+
+  .contenedor-articulo .textos-about-us h2 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
 
   .contenedor-articulo {
     flex-direction: column;
@@ -527,7 +638,17 @@ nav {
   }
 
   .articulo {
-    width: 60%;
+    width: 90%;
+  }
+
+  .imgHover {
+    top: 31px;
+  }
+
+  .articulo .imagen-articulo h6 {
+    top: 49px;
+    right: 44px;
+    width: 168px;
   }
 
   .section-install {
