@@ -3,7 +3,6 @@ let enlacesHeader = document.querySelector(".enlaces-header");
 
 // Get all buttons with class="btn" inside the container
 let btns = enlacesHeader.querySelectorAll(".btn");
-console.log(btns);
 
 btns.forEach(linkActive => {
   linkActive.addEventListener('click', function () {
