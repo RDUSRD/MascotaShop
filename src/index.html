@@ -18,25 +18,24 @@
           <img src="/assets/img/logo.png" alt="mascotashop logo" />
         </div>
         <div class="enlaces-header">
-          <a href="#" rel="noopener noreferrer">Home</a>
-          <a href="#" rel="noopener noreferrer">¿Qué somos?</a>
-          <a href="#" rel="noopener noreferrer">Instalar</a>
-          <a href="#" rel="noopener noreferrer">Dinos Hola!</a>
+          <a class="btn active" href="#" rel="noopener noreferrer">Home</a>
+          <a class="btn" href="#aboutUs" rel="noopener noreferrer">¿Qué somos?</a>
+          <a class="btn" href="#howToInstall" rel="noopener noreferrer">Instalar</a>
+          <a class="btn" href="#contactUs" rel="noopener noreferrer">Dinos Hola!</a>
 
           <div class="social-media">
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-instagram"></i>
           </div>
-
-          <div class="hamburger">
-            <i class="fas fa-bars"></i>
-          </div>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
       </section>
     </nav>
 
     <div class="contenedor">
-      <section class="contenido-header">
+      <section class="contenido-header" id="#">
         <section class="textos-header">
           <h1>la mejor app para consentir a <span>tu mascota</span></h1>
           <p>En <b>MascotaShop</b> puedes encontrar todo lo que hará feliz a tu mascota... sin tener que salir de
@@ -59,8 +58,8 @@
     </div>
   </header>
 
-  <div class="contenedor1">
-    <section class="about-us">
+  <section class="about-us">
+    <div class="contenedor" id="aboutUs">
       <div class="contenedor-articulo">
 
         <div class="textos-about-us">
@@ -96,26 +95,35 @@
           <p>5</p>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <div class="contenedor">
-    <section class="section-install">
-      <img src="/assets/img/svg/phones.png" alt="">
-      <section class="textos-install">
-        <p>Disfruta de todos los beneficios que solo MascotaShop te brinda para tu comodidad y la de tu mascota, todo en
-          la palma de tu mano.</p>
-        <p>Instála y entérate por tí mismo de todas sus funciones.</p>
-      </section>
-      <section class="store">
-        <img src="/assets/img/svg/btn_google_color.svg" alt="">
-        <img src="/assets/img/svg/btn_ios_color.svg" alt="">
-      </section>
-      <img src="/assets/img/svg/app_2.svg" alt="">
-    </section>
-  </div>
+  <section class="install">
+    <div class="contenedor" id="howToInstall">
+      <section class="section-install">
+        <section class="install1">
+          <img src="/assets/img/svg/phones.png" alt="">
 
-  <section class="contenedor">
+          <section class="store">
+            <img src="/assets/img/svg/btn_google_color.svg" alt="">
+            <img src="/assets/img/svg/btn_ios_color.svg" alt="">
+          </section>
+        </section>
+        <section class="install2">
+          <section class="textos-install">
+            <p>Disfruta de todos los beneficios que solo MascotaShop te brinda para tu comodidad y la de tu mascota,
+              todo
+              en la palma de tu mano.</p>
+            <p>Instála y entérate por tí mismo de todas sus funciones.</p>
+          </section>
+
+          <img src="/assets/img/svg/app_2.svg" alt="">
+        </section>
+      </section>
+    </div>
+  </section>
+
+  <section class="contenedor" id="contactUs">
     <section class="content-contact">
       <img src="/assets/img/svg/pet.svg" alt="">
 
@@ -145,6 +153,7 @@
 
 
   <script src="https://kit.fontawesome.com/2adebae33a.js" crossorigin="anonymous"></script>
+  <script src="/src/index.js"></script>
 </body>
 
 </html>
